@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/bootstrap/bootstrap.css}"
+          rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<div class="card">
+<div class="card-header">Calcular Costo Computadora</div>
+    <div class="card-body">
+        <form method="post" th:action="@/computadora" th:object="$objcomputadora">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nrocomputadoras" th:field="*{nroComputadoras}">
+                <label for="nrocomputadoras">Ingrese su numero de computadoras</label>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
